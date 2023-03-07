@@ -1,1 +1,2 @@
-# Bookings
+# Bookings and Reservations
+
