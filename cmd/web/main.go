@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/SIBUK/Bookings/pkg/config"
-	"github.com/SIBUK/Bookings/pkg/handlers"
-	"github.com/SIBUK/Bookings/pkg/render"
+	"github.com/SIBUK/Bookings/internal/config"
+	"github.com/SIBUK/Bookings/internal/handlers"
+	"github.com/SIBUK/Bookings/internal/render"
 	"fmt"
 	"log"
 	"net/http"
