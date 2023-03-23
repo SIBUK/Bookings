@@ -1,13 +1,16 @@
 package main
 
 import (
-	"github.com/SIBUK/Bookings/internal/config"
-	"github.com/SIBUK/Bookings/internal/handlers"
-	"github.com/SIBUK/Bookings/internal/render"
+	"encoding/gob"
 	"fmt"
 	"log"
 	"net/http"
 	"time"
+
+	"github.com/SIBUK/Bookings/internal/config"
+	"github.com/SIBUK/Bookings/internal/handlers"
+	"github.com/SIBUK/Bookings/internal/models"
+	"github.com/SIBUK/Bookings/internal/render"
 
 	"github.com/alexedwards/scs/v2"
 )
@@ -17,6 +20,9 @@ const portNumber = ":8080"
 var app config.AppConfig
 
 func main() {
+	// Stuff to store in the session
+	gob.Register(models.Reservation{})
+
 	app.InProduction = false
 
 	session := scs.New()
@@ -28,7 +34,8 @@ func main() {
 
 	tc, err := render.CreateTemplateCache()
 	if err != nil {
-		log.Fatal("cannot create template cache")
+		//log.Fatal("cannot create template cache")
+		log.Fatal(err)
 	}
 
 	app.TemplateCache = tc
