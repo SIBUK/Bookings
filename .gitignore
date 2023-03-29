@@ -1,3 +1,4 @@
 ﻿.vscode/launch.json
 cmd/web/__debug_bin.exe
 bookings.exe
+database.yml
