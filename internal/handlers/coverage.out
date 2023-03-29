@@ -1,0 +1,22 @@
+mode: set
+github.com/SIBUK/Bookings/internal/handlers/handlers.go:24.47,28.2 1 1
+github.com/SIBUK/Bookings/internal/handlers/handlers.go:31.33,33.2 1 1
+github.com/SIBUK/Bookings/internal/handlers/handlers.go:36.67,41.2 3 1
+github.com/SIBUK/Bookings/internal/handlers/handlers.go:44.68,54.2 5 1
+github.com/SIBUK/Bookings/internal/handlers/handlers.go:57.71,59.2 1 1
+github.com/SIBUK/Bookings/internal/handlers/handlers.go:62.69,64.2 1 1
+github.com/SIBUK/Bookings/internal/handlers/handlers.go:67.75,69.2 1 1
+github.com/SIBUK/Bookings/internal/handlers/handlers.go:72.79,77.2 3 1
+github.com/SIBUK/Bookings/internal/handlers/handlers.go:85.79,92.16 3 1
+github.com/SIBUK/Bookings/internal/handlers/handlers.go:92.16,94.3 1 0
+github.com/SIBUK/Bookings/internal/handlers/handlers.go:96.2,97.14 2 1
+github.com/SIBUK/Bookings/internal/handlers/handlers.go:101.70,103.2 1 1
+github.com/SIBUK/Bookings/internal/handlers/handlers.go:105.74,114.2 4 1
+github.com/SIBUK/Bookings/internal/handlers/handlers.go:117.78,119.16 2 1
+github.com/SIBUK/Bookings/internal/handlers/handlers.go:119.16,121.3 1 0
+github.com/SIBUK/Bookings/internal/handlers/handlers.go:123.2,140.19 8 1
+github.com/SIBUK/Bookings/internal/handlers/handlers.go:140.19,149.3 4 1
+github.com/SIBUK/Bookings/internal/handlers/handlers.go:151.2,153.66 2 0
+github.com/SIBUK/Bookings/internal/handlers/handlers.go:157.81,159.9 2 0
+github.com/SIBUK/Bookings/internal/handlers/handlers.go:159.9,164.3 4 0
+github.com/SIBUK/Bookings/internal/handlers/handlers.go:166.2,173.4 4 0

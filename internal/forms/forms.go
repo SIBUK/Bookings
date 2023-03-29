@@ -2,7 +2,6 @@ package forms
 
 import (
 	"fmt"
-	"net/http"
 	"net/url"
 	"strings"
 
@@ -14,21 +13,18 @@ type Form struct {
 	Errors errors
 }
 
-
 // Returns true is there are no errors on the form, otherwise false
 func (f *Form) Valid() bool {
 	return len(f.Errors) == 0
 }
 
-
 // Initialized a form struct
 func New(data url.Values) *Form {
-	return &Form {
+	return &Form{
 		data,
 		errors(map[string][]string{}),
 	}
 }
-
 
 func (f *Form) Required(fields ...string) {
 	for _, field := range fields {
@@ -39,10 +35,9 @@ func (f *Form) Required(fields ...string) {
 	}
 }
 
-
 // Checks if form field is in post and not empty
-func (f *Form) Has(field string, r *http.Request) bool {
-	x := r.Form.Get(field)
+func (f *Form) Has(field string) bool {
+	x := f.Get(field)
 	if x == "" {
 		return false
 	}
@@ -50,10 +45,15 @@ func (f *Form) Has(field string, r *http.Request) bool {
 	return true
 }
 
-
 // MinLength checks for string minimum length
-func (f *Form) MinLength(field string, length int, r *http.Request) bool {
-	x := r.Form.Get(field)
+func (f *Form) MinLength(field string, length int) bool {
+	x := f.Get(field)
+
+	if x == "" {
+		f.Errors.Add(field, fmt.Sprintf("requested field %s does not exist on form", field))
+		return false
+	}
+
 	if len(strings.TrimSpace(x)) < length {
 		f.Errors.Add(field, fmt.Sprintf("This string must be at least %d characters long", length))
 		return false
@@ -61,7 +61,6 @@ func (f *Form) MinLength(field string, length int, r *http.Request) bool {
 
 	return true
 }
-
 
 func (f *Form) IsEmail(field string) {
 	if !govalidator.IsEmail(f.Get(field)) {

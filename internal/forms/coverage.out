@@ -1,0 +1,20 @@
+mode: set
+github.com/SIBUK/Bookings/internal/forms/errors.go:6.44,8.2 1 1
+github.com/SIBUK/Bookings/internal/forms/errors.go:11.42,13.18 2 0
+github.com/SIBUK/Bookings/internal/forms/errors.go:13.18,15.3 1 0
+github.com/SIBUK/Bookings/internal/forms/errors.go:17.2,17.14 1 0
+github.com/SIBUK/Bookings/internal/forms/forms.go:19.29,21.2 1 1
+github.com/SIBUK/Bookings/internal/forms/forms.go:25.33,30.2 1 1
+github.com/SIBUK/Bookings/internal/forms/forms.go:33.43,34.31 1 1
+github.com/SIBUK/Bookings/internal/forms/forms.go:34.31,36.37 2 1
+github.com/SIBUK/Bookings/internal/forms/forms.go:36.37,38.4 1 1
+github.com/SIBUK/Bookings/internal/forms/forms.go:44.39,46.13 2 1
+github.com/SIBUK/Bookings/internal/forms/forms.go:46.13,48.3 1 1
+github.com/SIBUK/Bookings/internal/forms/forms.go:50.2,50.13 1 1
+github.com/SIBUK/Bookings/internal/forms/forms.go:55.57,58.13 2 1
+github.com/SIBUK/Bookings/internal/forms/forms.go:58.13,61.3 2 1
+github.com/SIBUK/Bookings/internal/forms/forms.go:63.2,63.40 1 1
+github.com/SIBUK/Bookings/internal/forms/forms.go:63.40,66.3 2 1
+github.com/SIBUK/Bookings/internal/forms/forms.go:68.2,68.13 1 1
+github.com/SIBUK/Bookings/internal/forms/forms.go:72.38,73.40 1 1
+github.com/SIBUK/Bookings/internal/forms/forms.go:73.40,75.3 1 1
